@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?> 
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <font id="iconfont" horiz-adv-x="90">
+    <font-face font-family="iconfont"
+      units-per-em="90" ascent="60"
+      descent="30" />
+    <missing-glyph horiz-adv-x="0" />
+    <glyph glyph-name="automat"
+      unicode="&#xE001;"
+      horiz-adv-x="90" d=" M71.7 60H17.8C12.2 60 7.5 55.3 7.5 49.7V-19.2C7.5 -24.4 12.2 -29.0000000000001 17.8 -29.0000000000001H72.2C77.8 -29.0000000000001 82.5 -24.3000000000001 82.5 -18.7V49.7C82 55.3 77.3 60 71.7 60zM59.5 50.6H64.7V45.9H59.5V50.6zM59.5 41.7H64.7V37H59.5V41.7zM59.5 33.3H64.7V28.6H59.5V33.3zM59.5 24.4H64.7V19.7H59.5V24.4zM59.5 15.5H64.7V10.8H59.5V15.5zM51.1 -19.6H16.9V-7H51.6V-19.7H51.1zM51.1 0H16.9V50.6H51.6V0H51.1zM74.1 -6.1H59.6V3.7H74.1V-6.1zM74.1 10.3H68.9V15H74.1V10.3zM74.1 19.2H68.9V23.9H74.1V19.2zM74.1 28.2H68.9V32.9H74.1V28.2zM74.1 37.1H68.9V41.8H74.1V37.1zM74.1 46H68.9V50.7H74.1V46z" />
+  </font>
+</defs>
+</svg>
