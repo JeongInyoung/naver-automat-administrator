@@ -269,9 +269,9 @@ select::-ms-expand {
 	caption {
 		display: none;
 	}
-	colgroup {
+	* colgroup {
 		col {
-			width: auto;
+			min-width: 60px;
 		}
 	}
 	thead {
@@ -381,16 +381,23 @@ select::-ms-expand {
 	span {
 		a {
 			display: inline-block;
-			min-width: 26px;
-			padding: 2px 4px;
+			min-width: 24px;
+			padding: 3px 4px;
 			box-sizing: border-box;
+			border-radius: 15px;
 		}
-		&:hover, &:active, &.active {
+		&:hover, &:focus {
+			a {
+				font-weight: bold;
+				color: $font-color-active;
+				background: #c7e6bd;
+			}
+		}
+		&.active {
 			a {
 				font-weight: bold;
 				color: #fff;
 				background: $font-color-active;
-				border-radius: 10px;
 			}
 		}
 	}

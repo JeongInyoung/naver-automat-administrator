@@ -41,9 +41,11 @@
 #top-menu {
 	@include span(6);
 	height: 36px;
-	text-align: center;
+	text-align: right;
+	margin-right: 0;
 	.column {
 		display: inline-block;
+		padding-left: 60px;
 		> li {
 			position: relative;
 			float: left;
@@ -108,6 +110,13 @@
 				font-size: 16px;
 				left: 16px;
 			}
+			&:nth-of-type(5):before {
+				font-family: 'FontAwesome';
+				content: "\f1ea";
+				font-size: 16px;
+				top: 7px;
+				left: 12px;
+			}
 		}
 	}
 }
@@ -164,6 +173,11 @@
 			&:nth-of-type(4) {
 				>ul {
 					left: -150px;
+				}
+			}
+			&:nth-of-type(5) {
+				>ul {
+					left: -80px;
 				}
 			}
 		}
@@ -271,7 +285,7 @@
 		display: inline-block;
 		font-size: 50px;
 		color: #fff;
-		padding: 0 50px;
+		padding: 0 42px;
 		margin-top: 58px;
 		&:hover,
 		&:focus,
@@ -297,14 +311,20 @@
 	}
 	> a:nth-of-type(3) {
 		i {
-			font-size: 82px;
+			font-size: 78px;
 			vertical-align: text-bottom;
 		}
 	}
 	> a:nth-of-type(4) {
 		i {
-			font-size: 80px;
+			font-size: 76px;
 			vertical-align: baseline;
+		}
+	}
+	> a:nth-of-type(5) {
+		i {
+			font-size: 80px;
+			vertical-align: text-top;
 		}
 	}
 }
@@ -530,5 +550,35 @@
 .report-automat-list {
 	.table-set {
 		@extend .item-item-list;
+	}
+}
+
+// =======================================
+// report-automat-list.html (판매일보 - 자판기 장소별 판매일보)
+// =======================================
+.sale-automat-report {
+	.table-set {
+		@extend .item-item-list;
+		colgroup {
+			col:nth-of-type(2),
+			col:nth-of-type(3) {
+				min-width: 150px;
+			}
+		}
+	}
+}
+
+// =======================================
+// report-automat-list.html (판매일보 - 자판기 장소별 판매일보)
+// =======================================
+.sale-automat-state {
+	.table-set {
+		@extend .item-item-list;
+		colgroup {
+			col:nth-of-type(2),
+			col:nth-of-type(3) {
+				min-width: 150px;
+			}
+		}
 	}
 }

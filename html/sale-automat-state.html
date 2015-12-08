@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--#include file="_inc/_top-settings.html"-->
+<body>
+<!--#include file="_inc/_skip-navigation.html"-->
+
+<!-- Header Area -->
+<header id="header">
+<!--#include file="_inc/_header.html"-->
+</header>
+<!-- / Header Area End -->
+
+<!-- Contents Area-->
+<main id="container">
+	<article class="wrap sale-automat-state">
+		<h2 class="sub-top-title">자판기 상태</h2>
+		<!-- Form Group -->
+		<div class="form-group">
+			<div class="form-area-left">
+				<!-- 기간 -->
+				<div class="input-area gutter">
+					<label for="period">기간</label>
+					<input id="period" type="text">
+					<button aria-label="날자선택" class="fa fa-calendar"></button>
+				</div>
+				<div class="input-area">
+					<span>~</span>
+					<input type="text">
+					<button aria-label="날자선택" class="fa fa-calendar"></button>
+				</div>
+				<!-- 기간 끝 -->
+			</div>
+			<div class="form-area-right">
+				<a class="btn-default" role="button" href="">검색</a>
+			</div>
+		</div>
+		<!-- / Form Group End -->
+		<!-- Search Group -->
+		<div class="form-group">
+			<div class="form-area-left">
+				<span class="result-area">검색결과 : <b>15</b> 건</span>
+			</div>
+			<div class="form-area-right">
+				<ul>
+					<li>
+						<div class="checkbox">
+							<input type="checkbox" id="itemListView">
+							<label class="checkbox-label" for="itemListView">컬럼NO. 숨김보기</label>
+						</div>
+					</li>
+					<li>
+						<a class="btn-excel" role="button" href="">Excel Download<i class="fa fa-download"></i></a>
+					</li>
+					<li>
+						<div class="input-area">
+							<input id="employee" type="text">
+							<button aria-label="검색하기" class="fa fa-search"></button>
+						</div>
+					</li>
+					<li class="select-area">
+						<label for="pageList">리스트 보기</label>
+						<select id="pageList" class="select_option">
+							<option value="">10개씩 보기</option>
+							<option value="">20개씩 보기</option>
+							<option value="">30개씩 보기</option>
+							<option value="">40개씩 보기</option>
+							<option value="">50개씩 보기</option>
+						</select>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- / Search Group End -->
+		<!-- Table list Group -->
+		<table class="table-set">
+			<caption>자판기별 리포트</caption>
+			<colgroup>
+				<col>
+				<col>
+				<col>
+				<col>
+			</colgroup>
+			<thead>
+				<tr>
+					<th>No.<button aria-label="정렬" class="fa fa-sort-down"></button></th>
+					<th>자판기 ID<button aria-label="정렬" class="fa fa-sort-down"></button></th>
+					<th>자판기 위치<button aria-label="정렬" class="fa fa-sort-down"></button></th>
+					<th>최종 정보 수신일<button aria-label="정렬" class="fa fa-sort-down"></button></th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Total 틀고정 -->
+				<tr>
+					<th>1</th>
+					<th>전체</th>
+					<th></th>
+					<th></th>
+				</tr>
+				<!-- Total 틀고정 끝 -->
+				<tr>
+					<td></td>
+					<td><a class="id-link" href="">XXXXXXXXXXXXXX</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- / Table list Group End -->
+		<!-- Paging -->
+		<div class="paging">
+			<button><i class="fa fa-backward" aria-label="처음으로"></i></button>
+			<button><i class="fa fa-caret-left" aria-label="이전"></i></button>
+			<span><a href="">1</a></span>
+			<span><a href="">2</a></span>
+			<span><a href="">3</a></span>
+			<span><a href="">4</a></span>
+			<span class="active"><a href="">5</a></span><!-- 선택된 상태 class="active" 추가 -->
+			<span><a href="">6</a></span>
+			<span><a href="">7</a></span>
+			<span><a href="">8</a></span>
+			<span><a href="">9</a></span>
+			<span><a href="">10</a></span>
+			<button><i class="fa fa-caret-right" aria-label="다음"></i></button>
+			<button><i class="fa fa-forward" aria-label="끝으로"></i></button>
+		</div>
+		<!-- / Paging End -->
+	</article>
+</main>
+<!-- / Contents Area End-->
+
+<!--#include file="_inc/_ie.html"-->
+
+<!--#include file="_inc/_javascript.html"-->
+</body>
+</html>

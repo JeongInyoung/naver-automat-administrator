@@ -13,7 +13,7 @@
 		// SVG 주입(Injector) 설정 옵션
 		var injectorOptions = {
 			evalScripts: 'once', // always, once, never
-			pngFallback: 'images/ie-assets', // PNG 대체 폴더 설정
+			pngFallback: '/resource/images/ie-assets', // PNG 대체 폴더 설정
 			each: function(svg) {
 				// svg는 수집된 개별 img.inject-me를 가리킴
 				// console.log(svg.id);
@@ -49,12 +49,10 @@
 
 	// IE 10, 11 체크
 	function checkSetClassPropIE() {
-		// IE 10 => 문서에서 ('MSIE 10')를 찾아서 class=ie10 를 적용
 		if (_ua.indexOf('MSIE 10') > -1) {
-			$html.addClass('lt-ie11 ie10'); // IE10 버전 체크하여 <html> 요소에 class=lt-ie11 ie10 을 적용
-		// IE 11 => 문서에서 ('rv:11') 를 찾아서 class=ie11 를 적용
+			$html.addClass('lt-ie11 ie10');
 		} else if (_ua.indexOf('rv:11') > -1) {
-			$html.addClass('lt-ie11 ie11'); // IE11 버전 체크하여 <html> 요소에 class=lt-ie11 ie11 을 적용
+			$html.addClass('lt-ie11 ie11');
 
 		}
 	}
@@ -79,16 +77,11 @@
 
 	// Popup Script
 	// 팝업이 링크 될 요소
-	$('.trigger-popup-layer').popupLayer();
+	$('.trigger-popup').popupLayer();
 	// 위치 이동 드래그 될 팝업창
 	$('.popup-layer .container').draggable({
 		//지정된 영역안에서만 이동
 		containment: "#container"
 	});
-
-	// Global Navigation Bar 설정
-	$('#top-menu').iyNavigation(/*{
-		'class': 'active'
-	}*/);
 
 })(window, document, window.jQuery);
