@@ -102,7 +102,7 @@ gulp.task('watch', function() {
 // =======================================
 // 폴더 제거 업무
 // =======================================
-gulp.task('remove', shell.task('rm -rf ' + BUILD + ' ' + SRC + '/iconfont/fonts ' + SRC + '/iconfont/preview ' + SRC + '/sass/fonts/_iconfont.scss' + ' cache'));
+gulp.task('remove', shell.task('rm -rf ' + BUILD + ' ' + SRC + '/iconfont/fonts ' + SRC + '/iconfont/preview ' + SRC + '/sass/fonts/_iconfont.scss ' + ' cache'));
 
 // =======================================
 // 서버 업무
@@ -168,22 +168,6 @@ gulp.task('css:min', function() {
 		.pipe( gulp.dest(BUILD + '/resource/css') );
 });
 
-// gulp.task('sass', function() {
-// 	return gulp.src('html/sass/**/*.{sass,scss}')
-// 		.pipe( sourcemaps.init() )
-// 		.pipe( sass({
-// 			'ouputStyle': compress.css_singleline ? 'compact' : 'expanded',
-// 			'indentedSyntax': true,
-// 		}).on('error', sass.logError) )
-// 		.pipe( sourcemaps.write('./', {
-// 			includeContent: false,
-// 			sourceRoot: './'
-// 		}) )
-// 		.pipe( gulp.dest(BUILD + '/css') )
-// 		.pipe( filter("**/*.css") )
-// 		.pipe( reload({stream: true}) );
-// });
-
 // =======================================
 // JS 병합 업무
 // =======================================
@@ -234,7 +218,7 @@ gulp.task('iconfont:make', function(cb){
 		// Preview 생성 폴더 경로 설정
 		previewFolder: SRC + '/iconfont/preview',
 		// font 경로 설정
-		fontUrl: '/fonts',
+		fontUrl: '/resource/fonts',
 		// 아이콘 베이스라인 위치 설정
 		descent: 30
 	}, cb);
@@ -243,7 +227,6 @@ gulp.task('iconfont:make', function(cb){
 		gulp.start('iconfont:move');
 	}, 1000);
 });
-
 gulp.task('iconfont:move', function(){
 	gulp.src(SRC + '/iconfont/fonts/*')
 		.pipe( gulp.dest( BUILD + '/resource/fonts' ) );

@@ -17,14 +17,14 @@
 @font-face
 {
     font-family: 'iconfont';
-    src: url('/resource//fonts/iconfont.eot?h=3671034415a905be27de15b3d23aea5d');
-    src: url('/resource//fonts/iconfont.eot?h=3671034415a905be27de15b3d23aea5d#iefix') format('eot'),
-    url('/resource//fonts/iconfont.woff?h=3671034415a905be27de15b3d23aea5d') format('woff'),
-    url('/resource//fonts/iconfont.ttf?h=3671034415a905be27de15b3d23aea5d') format('truetype'),
-    url('/resource//fonts/iconfont.svg?h=3671034415a905be27de15b3d23aea5d#iconfont') format('svg');
+    src: url('/resource/fonts/iconfont.eot?h=3671034415a905be27de15b3d23aea5d');
+    src: url('/resource/fonts/iconfont.eot?h=3671034415a905be27de15b3d23aea5d#iefix') format('eot'),
+    url('/resource/fonts/iconfont.woff?h=3671034415a905be27de15b3d23aea5d') format('woff'),
+    url('/resource/fonts/iconfont.ttf?h=3671034415a905be27de15b3d23aea5d') format('truetype'),
+    url('/resource/fonts/iconfont.svg?h=3671034415a905be27de15b3d23aea5d#iconfont') format('svg');
 }
 
-.icon
+.iconfont
 {
     display: inline-block;
     font-family: 'iconfont';
@@ -38,20 +38,20 @@
 
 // Required for 'iconfont.htc'
 //
-.icon.hide-pseudo-element:before
+.iconfont.hide-pseudo-element:before
 {
     content: '' !important;
     display: none !important;
 }
 
 
-.icon-automat
+.iconfont-automat
 {
     // IE8 : Polyfill using behavior
-    behavior: url(/resource//fonts/iconfont.htc);
+    behavior: url(/resource/fonts/iconfont.htc);
     icon: 'E001';
 }
-.icon-automat:before
+.iconfont-automat:before
 {
     content: '\E001';
 }
