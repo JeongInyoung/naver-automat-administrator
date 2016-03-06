@@ -1,8 +1,6 @@
-## Gulp 명령어 정리
+# Naver Automat Administrator Site
 
-명령어 | 해석
----|---
-`gulp` | Gulp 기본 업무 (+워치)
-`gulp build` | Gulp 빌드 업무
-`gulp remove` | Gulp 생성 폴더 제거 업무
-`gulp server` | Gulp 서버 업무
+#### NAVER 자판기 관리 시스템
+- 기간 : 2015월 8월 ~ 2015년 9월 (1개월)
+- 역할 : HTML, CSS, jQuery, javascript, Sass, Gulp, Github (100%)
+- 성과 : 폐쇠형 사이트로 확인 불가
